@@ -26,6 +26,7 @@ public class BattleshipServer {
         
         server.createContext("/", new StaticFileHandler("web/index.html", "text/html"));
         server.createContext("/style.css", new StaticFileHandler("web/style.css", "text/css"));
+        server.createContext("/favicon.svg", new StaticFileHandler("web/favicon.svg", "image/svg+xml"));
         server.createContext("/script.js", new StaticFileHandler("web/script.js", "application/javascript"));
         
         server.createContext("/api/start", new StartGameHandler());

@@ -215,14 +215,12 @@ body {
 }
 
 .credit {
-  position: absolute;
-  bottom: 15px;
-  right: 20px;
+  margin-top: 10px;
   font-size: 0.85rem;
   color: var(--primary);
   opacity: 0.6;
   letter-spacing: 1px;
   font-weight: 600;
   text-shadow: 0 0 5px var(--primary-glow);
-  pointer-events: none;
+  text-align: center;
 }

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Battleship</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Neon <span class="highlight">Battleship</span></h1>
+        <p>Find all 4 hidden ships to win.</p>
+      </div>
+
+      <div class="stats panel">
+        <div class="stat-box">
+          <span class="label">TURNS</span>
+          <span class="value" id="turns">0</span>
+        </div>
+        <div class="stat-box">
+          <span class="label">SHIPS LEFT</span>
+          <span class="value" id="ships-left">4</span>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <!-- Grid cells injected via JS -->
+      </div>
+
+      <div class="message-box panel" id="message-box">
+        System ready. Awaiting coordinates.
+      </div>
+
+      <button id="restart-btn" class="btn hidden">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
